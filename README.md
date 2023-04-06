@@ -97,6 +97,6 @@ bremersons@hotmail.com => l-YLt53VGs@VDIdçQ4.com
 
 ![Synapse_Spark_notebook_session](Images/3_notebook_run.png)
 
-#### 4. (Optional) Create Synapse pipeline ingested and propagating data to Azure SQL
+### 4. (Optional) Create Synapse pipeline ingested and propagating data to Azure SQL
 
 Pipeline can be found in  ```Synapse/synapse_pipeline.json```
