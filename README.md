@@ -22,12 +22,12 @@ See high level architecture below:
 
 ![Architecture](Images/0_Architecture.jpg)
 
-Following steps need to done:
+Following steps need to be taken:
 
-- Deploy resources
-- Configure resources
-- Test Synapse notebook 
-- (Optional) Create Synapse pipeline ingested and propagating data to Azure SQL
+1. Deploy resources
+2. Configure resources
+3. Test Synapse notebook 
+4. (Optional) Create Synapse pipeline ingested and propagating data to Azure SQL
 
 ### 1. Deploy resources
 
