@@ -18,7 +18,7 @@ Project that leverages Azure Synapse to create a scalable PII masking capability
 - **Orchestration**:
   - Synapse pipelines can orchestrate the process end to end. That is, data can be fetched from on-premises using over 100 different connectors, staged to Azure Storage, masked and then sent back to lower environment for testing.
 
-See high level architecture below:
+See high level architecture below (example uses data source/target on on-premises, but data source/target can also be cloud):
 
 ![Architecture](Images/0_Architecture.jpg)
 
