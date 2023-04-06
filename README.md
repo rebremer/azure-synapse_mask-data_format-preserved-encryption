@@ -1,7 +1,7 @@
 ## Azure Synapse, mask data using format preserved encryption (fpe)
-Azure Synapse capability to mask PII data using [format preserved encryption](https://en.wikipedia.org/wiki/Format-preserving_encryption) at scale. In this, the following is taken care for:
+Project that leverages Azure Synapse to create a scalable PII masking capability using [format preserved encryption](https://en.wikipedia.org/wiki/Format-preserving_encryption). This capablity can be used to mask data from PRD environments to TST environments. Properties are as follows:
  
-- **Masking functionality**: Extending on Python libraries like [ff3]((https://github.com/mysto/python-fpe), fpe can be achieved for IDs, names, phone numbers and emails (similar what can be done with [k2view masking tools](https://www.k2view.com/solutions/data-masking-tools/)). For example:
+- **Masking functionality**: Extending on Python libraries like [ff3](https://github.com/mysto/python-fpe), fpe can be achieved for IDs, names, phone numbers and emails (similar what can be done with [k2view masking tools](https://www.k2view.com/solutions/data-masking-tools/)). For example:
   - Bremer => 6paCYa
   - Bremer & Sons!, LTD. => OsH0*VlF(dsIGHXkZ4dK
   - 06-23112312 => 48-78322271
