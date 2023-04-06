@@ -7,7 +7,7 @@ Project that leverages Azure Synapse to create a scalable PII masking capability
   - 06-23112312 => 48-78322271
   - bremersons@hotmail.com => l-YLt53VGs@VDIdçQ4.com
 - **Security**: Synapse Analytics workspace that used the following capabilities:
-  - Network: Private endpoints to connect to storage Account and Azure SQL (public access can be disabled)
+  - Network: Private endpoints to connect to storage Account, Azure SQL (public access can be disabled) and 100 of other data sources (inclusing on-premises)
   - Authentication: Managed Identity to authenticate to Storage account, Azure SQL and Azure Key Vault in which the secrets are stored that are used by ff3 for encryption, 
   - Authorization: RBAC for authorization to Azure Storage, Azure SQL and Azure Key Vault
   - Data exfiltration protection enabled. Using [Synapse data exfiltration protection capability](https://learn.microsoft.com/en-us/azure/synapse-analytics/security/workspace-data-exfiltration-protection), it can be prevented that data leaves the Rabobank tenant by a malicious insider
