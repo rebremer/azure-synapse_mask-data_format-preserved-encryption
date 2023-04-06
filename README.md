@@ -48,7 +48,7 @@ The following resources need to be deployed:
 
 - Azure Key vault - secrets: Create a secret called ```fpekey``` and ```fpetweak```. Make sure that Hexidecimal values are added for both secrets. In case Azure Key vault was deployed with public access enabled (in order to be able to create secrets via Azure Portal), it is now not needed anymore and public access can be disabled (since private link connection will be created between Synapse and Azure Key vault in 2c1.)
 
-- Azure Key vault - access control: Create a secret called ```fpekey``` and ```fpetweak```. Make sure that Hexidecimal values are added for both secrets. Also, create 5 secrets ```secret10```, ```secret100``````secret1000``````secret10000```and ```secret100000```, these can be filled with any value.
+- Azure Key vault - access control: Create a secret called ```fpekey``` and ```fpetweak```. Make sure that Hexidecimal values are added for both secrets. Also, create 5 secrets ```secret10```, ```secret100```, ```secret1000```, ```secret10000```and ```secret100000```, these can be filled with any value.
 .Make sure that in the access policies of the Azure Key Vault the Synapse Managed Identity had get access to secret, see also screenshot below.
 
 ![AKV_Synapse_access](Images/2b_AKV_access_policies.png)
