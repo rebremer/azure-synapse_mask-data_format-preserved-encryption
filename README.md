@@ -16,7 +16,7 @@ Project that leverages Azure Synapse to create a scalable PII masking capability
   - Compute: Medium sized Spark pool with 2 executors (VMs) and 8 vcores (threads) per executor (16 vcores/threads in total) 
   - => Able to mask the data and write it to a storage account in 1m45. It is expected that it is possible to scale solution further for larger datasets (either by scaling up with more vcores per executor or scaling out with more executors or just more spark pools)
 - **Orchestration**:
-  - Synapse pipelines can orchestrate the process end to end. That is, data can be fetched from on-premises using over 100 different connectors, staged to Azure Storage, masked and then sent back to lower environment for tested.
+  - Synapse pipelines can orchestrate the process end to end. That is, data can be fetched from on-premises using over 100 different connectors, staged to Azure Storage, masked and then sent back to lower environment for testing.
 
 See high level architecture below:
 
