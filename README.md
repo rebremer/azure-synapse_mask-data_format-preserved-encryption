@@ -10,7 +10,7 @@ Project that leverages Azure Synapse to create a scalable PII masking capability
   - Network: Private endpoints to connect to storage Account, Azure SQL (public access can be disabled) and 100 of other data sources (inclusing on-premises)
   - Authentication: Managed Identity to authenticate to Storage account, Azure SQL and Azure Key Vault in which the secrets are stored that are used by ff3 for encryption, 
   - Authorization: RBAC for authorization to Azure Storage, Azure SQL and Azure Key Vault
-  - Data exfiltration protection enabled. Using [Synapse data exfiltration protection capability](https://learn.microsoft.com/en-us/azure/synapse-analytics/security/workspace-data-exfiltration-protection), it can be prevented that data leaves the Rabobank tenant by a malicious insider
+  - Data exfiltration protection enabled. Using [Synapse data exfiltration protection capability](https://learn.microsoft.com/en-us/azure/synapse-analytics/security/workspace-data-exfiltration-protection), it can be prevented that data leaves the Customer tenant by a malicious insider
 - **Performance**: A test is created as follows:
   - Size: dataset with 1M records (total size of dataset 250MB). In this dataset, 6 columns are to be encrypted (id, firstname, lastname, companyname, email, phone) 
   - Compute: Medium sized Spark pool with 2 executors (VMs) and 8 vcores (threads) per executor (16 vcores/threads in total) 
